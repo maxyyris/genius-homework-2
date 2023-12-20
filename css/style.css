@@ -26,6 +26,10 @@
 }
 
 /* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Roboto', sans-serif;
@@ -33,8 +37,27 @@ body {
   font-weight: 400;
 }
 
+.container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 address {
@@ -70,6 +93,7 @@ address {
   font-weight: 600;
   border-radius: 32px;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -78,6 +102,10 @@ address {
 }
 
 /* HERO SECTION */
+.hero-section {
+  padding: 124px 0 514px 0;
+}
+
 .hero-tittle {
   color: var(--color-brand);
   font-family: 'Play', sans-serif;
@@ -85,6 +113,7 @@ address {
   font-weight: 700;
   line-height: 1.2;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .hero-text-information {
@@ -95,10 +124,18 @@ address {
 }
 
 /* ABOUT SECTION */
+.about-section {
+  padding: 0 0 88px 0;
+}
+
 .section-tittle {
   font-family: Play;
   font-size: 64px;
   font-weight: 700;
+}
+
+.section-tittle.tittle-margin {
+  margin-bottom: 0 0 48px 0;
 }
 
 .section-tittle .accent {
@@ -120,6 +157,10 @@ address {
 }
 
 /* ADVANTAGES SECTION */
+.advantages-section {
+  padding: 88px 0 48px 0;
+}
+
 .advantages-text {
   color: #000;
   text-align: center;
@@ -127,14 +168,22 @@ address {
 }
 
 /* PROCEDURES SECTION */
+.procedures-section {
+  padding: 48px 0;
+}
+
 .procedures-tittle {
-  color: var(--color-primary-light);
+  color: darkred;
   text-align: center;
   font-size: 22px;
   line-height: 1.1;
 }
 
 /* CONTACTS SECTION */
+.contacts-section {
+  padding: 48px 0 150px 0;
+}
+
 /* FOOTER */
 .footer-section {
   background: var(--color-primary-dark);
