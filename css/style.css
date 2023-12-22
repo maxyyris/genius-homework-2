@@ -32,6 +32,7 @@
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -129,7 +130,11 @@ address {
 
 /* HERO SECTION */
 .hero-section {
-  padding: 124px 0 514px 0;
+  padding: 160px 0 268px 0;
+  background-image: url(/images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-container {
@@ -172,6 +177,11 @@ address {
 .section-content {
   max-width: 710px;
   gap: 40px;
+}
+
+.about-photo {
+  border-radius: 327px;
+  background: #d9d9d9;
 }
 
 .section-tittle {
@@ -248,7 +258,7 @@ address {
 }
 
 .procedures-item {
-  flex-basis: calc((100% - 40px) / 3);
+  flex-basis: calc((100% - 32px) / 3);
 }
 
 /* CONTACTS SECTION */
