@@ -102,6 +102,24 @@ address {
   color: var(--color-brand);
 }
 
+.carousel-button {
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: solid 1px var(--color-primary-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand);
+  fill: var(--color-primary-light);
+}
+
 /* HEADER */
 .header-container {
   display: flex;
@@ -126,6 +144,14 @@ address {
 .header-social {
   display: flex;
   gap: 32px;
+}
+
+.header-icon {
+  fill: var(--color-primary-dark);
+}
+
+.header-icon:hover {
+  fill: var(--color-brand);
 }
 
 /* HERO SECTION */
@@ -232,9 +258,16 @@ address {
   gap: 56px;
 }
 
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-icon {
+  fill: var(--color-brand);
+}
+
 .advantages-text {
   color: #000;
-  text-align: center;
   line-height: 1.3;
   width: 252px;
 }
@@ -279,7 +312,14 @@ address {
 
 .adress-link:hover {
   color: var(--color-brand);
-  font-weight: 700;
+}
+
+.footer-icon {
+  fill: var(--color-primary-light);
+}
+
+.footer-icon:hover {
+  fill: var(--color-brand);
 }
 
 .politics-link {
@@ -290,7 +330,6 @@ address {
 
 .politics-link:hover {
   color: var(--color-brand);
-  font-weight: 700;
 }
 
 .politics-text {
