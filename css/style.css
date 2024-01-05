@@ -56,6 +56,10 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -80,6 +84,7 @@ address {
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-link:hover {
@@ -113,6 +118,7 @@ address {
   height: 44px;
   background-color: transparent;
   border: solid 1px var(--color-primary-dark);
+  flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -167,7 +173,7 @@ address {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-left: 32px;
+  margin-left: 86px;
   max-width: 400px;
 }
 
@@ -186,7 +192,6 @@ address {
   text-align: center;
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 16px;
   max-width: 250px;
 }
 
@@ -195,14 +200,23 @@ address {
   padding: 0 0 88px 0;
 }
 
-.about-container {
+.about-content {
   display: flex;
-  justify-content: space-between;
+  gap: 32px;
 }
 
-.section-content {
-  max-width: 710px;
-  gap: 40px;
+.content-text {
+  max-width: 666px;
+  margin-top: 40px;
+}
+
+.content-images-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-list-item {
+  margin-left: 200px;
 }
 
 .about-photo {
@@ -227,22 +241,23 @@ address {
 
 .about-tittle-accent {
   text-align: start;
-  max-width: 442px;
   margin-bottom: 40px;
 }
 
 .about-text {
   font-size: 22px;
   line-height: 1.7;
-  max-width: 666px;
   margin-bottom: 40px;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
 }
 
 .about-text .accent {
   font-weight: 600;
   text-transform: capitalize;
 }
-
 /* ADVANTAGES SECTION */
 .advantages-section {
   padding: 88px 0 48px 0;
@@ -260,6 +275,11 @@ address {
 
 .advantages-item {
   text-align: center;
+  padding: 32px 24px;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 32px;
+  background: var(--color-primary-light);
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
 }
 
 .advantages-icon {
@@ -277,8 +297,13 @@ address {
   padding: 48px 0;
 }
 
+.procedures-container {
+  display: flex;
+  justify-content: center;
+}
+
 .procedures-tittle {
-  color: darkred;
+  color: var(--color-primary-light);
   text-align: center;
   font-size: 22px;
   line-height: 1.1;
@@ -292,6 +317,12 @@ address {
 
 .procedures-item {
   flex-basis: calc((100% - 32px) / 3);
+  border-radius: 120px 4px;
+  background: linear-gradient(
+    rgba(1, 28, 68, 0),
+    rgba(1, 28, 68, 0.73),
+    #011c44
+  );
 }
 
 /* CONTACTS SECTION */
@@ -304,10 +335,38 @@ address {
   background: var(--color-primary-dark);
 }
 
+.footer-container {
+  display: flex;
+  gap: 32px;
+  padding: 56px 0 56px 0;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 186px;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
 .adress-link {
   color: var(--color-primary-light);
   font-size: 16px;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .adress-link:hover {
@@ -326,6 +385,7 @@ address {
   color: var(--color-primary-light);
   font-size: 16px;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .politics-link:hover {
